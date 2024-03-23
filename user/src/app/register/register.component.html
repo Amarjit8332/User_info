@@ -1,0 +1,129 @@
+{{message}}
+<div class="container">
+  <h2>User Info</h2>
+<form >
+  <div class="row">
+    <div class="col-1-2 form-group">
+        <label for=" First Name"> First Name: </label>
+        <input type="text" name="name"[(ngModel)]="user.name">
+    </div>
+    <div class="col-1-2 form-group">
+        <label for="Last Name:">Last Name:</label>
+      
+         <input type="text" name="Lname" [(ngModel)]="user.last_name">
+    </div>
+    <div class="col-1-2 form-group">
+        <label for="Preferred Name:">Preferred Name:</label>
+
+        <input type="text" name="name" [(ngModel)]="user.preferredName">
+    </div>
+         
+    <div class="form-group" class="col-1-2 form-group">
+        <label for="Pronouns">Pronouns: </label>
+        <select  name="Pronouns" [(ngModel)]="user.pronouns">
+          <option value="Mr">Mr.</option>
+          <option value="Mrs">Mrs.</option>
+          <option value="Her">Her</option>
+          <option value="Him">Him</option>
+        </select>
+      </div>
+    </div>   
+  <div class="row">
+    <div class="col-1-2 form-group">
+
+        <label for="Email Address(Work)">Email Address(Work): </label>
+        <input type="email" name="email" [(ngModel)]="user.email">
+    </div>
+    <div class="col-1-2 form-group">
+        <label for="Phone Number">Phone Number: </label>
+        <input type="phone" name="phone" [(ngModel)]="user.phoneNumber">
+    </div>
+    <div class="col-1-2 form-group">
+        <label for="Fax Number">Fax Number: </label>
+        <input type="fax" name="fax" [(ngModel)]="user.faxNumber">
+    </div>
+  </div> 
+  <div class="row">
+    <div class="col-1-2 form-group">
+        <label for="Department">Department: </label>
+        <select name="Department" [(ngModel)]="user.department">
+          <option value="Finance"> Finance</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Operations Management">Operations Management</option>
+          <option value="Human Resources">Human Resources </option>
+          <option value="Information Technology">Information Technology</option>
+        </select>
+      </div>
+    </div>   
+
+      
+      <h2>Work Address</h2>
+    <div class="row">   
+      <div class="col-1-2 form-group">
+        <label for="Address Line 1">Address Line 1</label>
+        <input type="text" name="address1" [(ngModel)]="user.address_1">
+      </div>
+      <div class="col-1-2 form-group">
+        <label for="Address Line 2">Address Line 2</label>
+        <input type="text" name="address2" [(ngModel)]="user.address_2">
+      </div>
+      <div class="col-1-2 form-group">
+        <label for="city">City</label>
+        <input type="text" name="city" [(ngModel)]="user.city">
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-1-2 form-group">
+        <label for="Province">Province</label>
+        <input type="text" name="city" [(ngModel)]="user.province">
+      </div>
+      <div class="col-1-2 form-group">
+        <label for="country">Country</label>
+        <input type="text" name="country" [(ngModel)]="user.country">
+      </div>
+      <div class="col-1-2 form-group">
+        <label for="zip code">Zip Code</label>
+        <input type="zipcode" name="zipcode" [(ngModel)]="user.zip_code">
+      </div>
+    </div>  
+
+      <h2>My Manager</h2>
+
+  <div class="row">
+      <div class="col-1-2 form-group">
+        <label for=" First Name"> First Name: </label>
+        <input type="text" name="name" [(ngModel)]="user.manager_first_name">
+    </div>
+    <div class="col-1-2 form-group">
+        <label for="Last Name:">Last Name:</label>
+      
+         <input type="text" name="Lname" [(ngModel)]="user.manager_last_name">
+    </div>
+    <div class="col-1-2 form-group">
+        <label for="Email:">Email:</label>
+      
+         <input type="email" name="Email" [(ngModel)]="user.manager_email">
+    </div>
+  </div>  
+          
+    <h2>Social Profile</h2>
+  <div class="row">
+    <div class="col-1-2 form-group">
+        <input type="text" name="linkedin" placeholder="Linked In" [(ngModel)]="user.linked_in">
+    </div>
+    <div class="col-1-2 form-group">
+        <input type="text" name="Facebook" placeholder="Facebook" [(ngModel)]="user.facebook">
+    </div>
+    <div class="col-1-2 form-group">
+        <input type="text" name="Other" placeholder="Other" [(ngModel)]="user.other">
+    </div>
+  </div>  
+
+    <div class="form-group">
+      <input type="submit" value="register" (click)="registerNow()"></div>
+
+
+
+      
+</form>
+</div>
